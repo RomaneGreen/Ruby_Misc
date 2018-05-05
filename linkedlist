@@ -1,0 +1,99 @@
+
+
+class LinkedList
+
+  attr_accessor :list
+
+  def initialize(list)
+
+    @list = list
+
+  end
+
+  def testssss
+    list
+  end
+
+def append(node) #checks 6
+
+
+  list.push(node)
+end
+
+
+
+
+def prepend(node) #checks 5
+
+  list.unshift(node)
+
+end
+
+
+
+
+def size() #checks 1
+
+  list.count
+end
+
+
+
+
+def head() #checks 2
+
+  list[0]
+end
+
+
+
+def tail() #checks 4
+
+  list[list.length-1]
+end
+
+
+
+def pop() #checks 8
+
+[list.pop]
+
+end
+
+
+
+def contains?(node) #checks 10
+
+list.include? node
+
+end
+
+
+
+
+def to_s() #checks 3
+
+ list.to_s
+
+end
+
+
+
+def at(index) #checks 9
+
+  list.index(index)
+
+end
+
+
+
+
+def find(node) #checks 7
+
+  list.index(node)
+
+end
+
+end
+
+kk = LinkedList.new([4,5,6])
